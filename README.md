@@ -31,7 +31,7 @@
 
 ### Potential Future Enhancements
  * Code Clean Up - efficiencies can be gained. Too much repeating currently.
- * Show icons around the circles to indicate number of quests.
+ * Show icons around the circles to indicate number of guests.
  * Full Guest list not added.
  * Only 7 tables are functional because of timing.
  * Clean up the visuals to be more appealing. 
