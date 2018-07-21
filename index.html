@@ -1,0 +1,180 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Guests</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Bootstrap JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+ <!-- My css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h1>Guest Tables</h1>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main col-md-6" >
+  
+    <div class="panel-group">
+      <div class="panel panel-danger">
+        <div class="panel-heading" >Enter Guest</div>
+        <div class="panel-body">
+          <form action="" id="guest-form">
+            <div class="form-group">
+             
+              <textarea id="guest" type="text" class="form-control"></textarea>
+			  <!--Are you bringing a +1? &nbsp;--><input type="hidden" id="plus1" name="plus1" value="N">
+			 
+            </div>
+            <button class="btn btn-default">Add Guest</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Guest List - Total: <span id="guestTotal"></span> </div>
+        <div class="panel-body">
+          <ul class="guest-list" id="test1">
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="table col-md-6" >	  
+	  <div class="panel-group-table">
+      <div class="panel panel-default">
+        <div class="panel-heading">Table Assignment</div>
+<div class="panel-body">
+ <div class="row-centered">
+<div class="circle0" id="circle0"><div id="guestCircle0"></div></div>
+ </div>
+        </div>
+        <div class="panel-body">
+		<div class="row">
+		
+<div class="circle1 col-xs-3" id="circle1"><div id="guestCircle1"></div></div>
+<div class="circle2 col-xs-3" id="circle2"><div id="guestCircle2"></div></div>
+<div class="circle3 col-xs-3" id="circle3"><div id="guestCircle3"></div></div>
+<div class="circle4 col-xs-3" id="circle4"><div id="guestCircle4"></div></div>
+ </div>
+        </div>
+		  <div class="panel-body">
+		  <div class="row">
+<div class="circle5 col-xs-3" id="circle5"><div id="guestCircle5"></div></div>
+<div class="circle6 col-xs-3" id="circle6"><div id="guestCircle6"></div></div>
+<div class="circle7 col-xs-3" id="circle7"><div id="guestCircle6"></div></div>
+<div class="circle8 col-xs-3" id="circle8"><div id="guestCircle6"></div></div>
+</div>
+        </div>
+				  <div class="panel-body">
+				   <div class="row">
+<div class="circle9 col-xs-3"  id="circle9"><div id="guestCircle9"></div></div>
+<div class="circle10 col-xs-3" id="circle10"><div id="guestCircle10"></div></div>
+<div class="circle11 col-xs-3" id="circle11"><div id="guestCircle11"></div></div>
+<div class="circle12 col-xs-3" id="circle12"><div id="guestCircle12"></div></div>
+</div>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <div class="main col-xs-12" >
+  
+    
+<div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Table WP  - Total: <span id="total0"></span> </div>
+        <div class="panel-body">
+          <ul class="guest-list0" id="table0">
+          </ul>
+        </div>
+      </div>
+    </div>
+	<div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Table 1 - Total: <span id="total1"></span></div>
+        <div class="panel-body">
+          <ul class="guest-list1" id="table1">
+          </ul>
+        </div>
+      </div>
+    </div>
+	  <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Table 2 - Total: <span id="total2"></span></div>
+        <div class="panel-body">
+          <ul class="guest-list2" id="table2">
+          </ul>
+        </div>
+      </div>
+    </div>
+	<div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Table 3 Total: <span id="total3"></span></div>
+        <div class="panel-body">
+          <ul class="guest-list3" id="table3">
+          </ul>
+        </div>
+      </div>
+    </div>
+	<div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Table 4 - Total: <span id="total4"></span></div>
+        <div class="panel-body">
+          <ul class="guest-list4" id="table4">
+          </ul>
+        </div>
+      </div>
+    </div>
+		<div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Table 11 - Total: <span id="total11"></span></div>
+        <div class="panel-body">
+          <ul class="guest-list11" id="table11">
+          </ul>
+        </div>
+      </div>
+    </div>
+	
+		<div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">Table 12 - Total: <span id="total12"></span></div>
+        <div class="panel-body">
+          <ul class="guest-list12" id="table12">
+          </ul>
+        </div>
+      </div>
+    </div>
+	
+</div>
+	
+	
+  
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Firebase CDN -->
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <!-- js -->
+  <script src="app.js"></script>
+</body>
+
+</html>
