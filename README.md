@@ -19,7 +19,7 @@
 
 ### Approach
 
- * I wanted to create a way to assign quests by category and visually show quests at table.
+ * I wanted to create a way to assign quests by category and visually show guests at table.
 	* I didn't quite get to the visual goal that I wanted.
  * I thought firebase would be best because it is an easy API to get up and running.
  
